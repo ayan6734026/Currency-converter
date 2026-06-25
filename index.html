@@ -11,32 +11,34 @@
     <div class="container">
         <h2>Currency Converter</h2>
     <form>
-        <div>
-            <p>Enter Amount</p>
-            <input type="text" >
-        </div>
-        <div>
+        <div class="amount_div">
+            <p id="amount_para">Enter Amount</p>
+            <input name="amount" value="1" type="text" >
+        </div >
+        <div class="country_select">
+        <div class="left_side">
             <p>From</p>
-            <div>
-                <img src="" alt="">
-                <select name="from">
+            <div class="from_container">
+                <img id="from_flag" src="https://flagsapi.com/US/flat/64.png" alt="">
+                <select class="select" name="from">
                     <option>INR</option>
                     <option selected>USD</option>
                 </select>
             </div>
         </div>
         <i class="fa-solid fa-arrow-right-arrow-left"></i>
-        <div>
+        <div class="right_side">
             <p>To</p>
-            <div>
-                <img src="" alt="">
-                <select name="to">
+            <div class="to_container">
+                <img id="to_flag" src="https://flagsapi.com/IN/flat/64.png" alt="">
+                <select class="select" name="to">
                     <option selected>INR</option>
                     <option >USD</option>
                 </select>
             </div>
         </div>
-        <Button>Get Exchange Rate</Button>
+        </div>
+        <button id="button">Get Exchange Rate</button>
     </form>
     </div>
     <script src="/country_code.js"></script>
