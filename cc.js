@@ -53,8 +53,7 @@ const updateExchangeRate= async ()=> {
         msgText=`${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`
         console.log(msgText);
         msg.innerText=msgText;
-    }    
-    
+    }       
 }
 
 btn.addEventListener("click",(evt)=>{
